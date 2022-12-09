@@ -2346,6 +2346,7 @@ element {
     justify-content: center;
     flex-direction: column;
     padding: 0 64px 48px;
+    margin: auto;
 }
 
 .toggle_button_group {
@@ -2397,10 +2398,14 @@ element {
     }
 }
 
+.main_content_section {
+    width: 823px;
+}
+
 .sale_ads_section {
     display: flex;
     flex-direction: column;
-    gap: 36px;
+    gap: 8px;
     width: 100%;
 }
 
@@ -2409,31 +2414,32 @@ element {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 54px;
-    line-height: 64px;
+    font-size: 46px;
+    line-height: 52px;
     text-align: center;
+    letter-spacing: -0.5px;
 }
 
 .top_button_group {
     display: flex;
     align-items: center;
-    gap: 64px;
+    gap: 24px;
     position: relative;
-    bottom: -24px;
-    padding-left: 133px;
+    bottom: -16px;
+    padding-left: 57px;
 }
 
 .top_button_group button {
-    width: 161px;
-    height: 48px;
+    width: 120px;
+    height: 32px;
     background: #ffad33;
     border: none;
-    border-radius: 16px;
+    border-radius: 8px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 16px;
+    line-height: 24px;
     color: white;
 }
 
@@ -2441,144 +2447,134 @@ element {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 83px 104px 40px 105px;
+    padding: 38px 66px 52px 64px;
     background: #fdf6ed;
     border: 3px solid #ffd08a;
     border-radius: 16px;
 }
 
-.sale_ads_container .sale_ads_description_container {
-    display: flex;
-    flex-direction: column;
-    gap: 47px;
-}
-
-.sale_ads_container .sale_ads_description_container img:first-child {
+.sale_ads_container img:first-child {
     width: 220px;
 }
 
-.sale_ads_container .sale_ads_description_container .sale_ads_description {
+.sale_ads_container .sale_ads_trial {
+    top: -14px;
+    position: relative;
     display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.sale_ads_container .sale_ads_description_container .sale_ads_description .description_item {
-    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 12px;
-}
-
-.sale_ads_container .sale_ads_description_container .sale_ads_description .description_item img {
-    width: 16px;
-}
-
-.sale_ads_container .sale_ads_description_container .sale_ads_description .description_item p {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    letter-spacing: -0.5px;
-    color: #585757;
-}
-
-.sale_ads_container .sale_item_container {
-    display: flex;
     flex-direction: column;
-    gap: 32px;
 }
 
-.sale_ads_container .sale_item_container p:first-child {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 36px;
-    text-align: center;
-    color: black;
-}
-
-.sale_ads_container .sale_item_container p:first-child span {
-    color: #00ba34;
-}
-
-.sale_ads_container .sale_item_container .offer_timer {
+.sale_ads_container .sale_ads_trial .offer_text {
+    width: 292px;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 8px;
 }
 
-.sale_ads_container .sale_item_container .offer_timer p {
+.sale_ads_container .sale_ads_trial .offer_text p {
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: center;
-}
-
-.sale_ads_container .sale_item_container .offer_timer p:first-child {
-    color: rgba(0, 0, 0, 0.8);
-}
-
-.sale_ads_container .sale_item_container .offer_timer p:nth-child(2) {
     color: black;
 }
 
-.sale_ads_container .sale_item_container .offer_timer .time_units {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    padding-left: 12px;
+.sale_ads_container .sale_ads_trial .offer_text span {
+    color: #00ba34;
 }
 
-.sale_ads_container .sale_item_container .offer_timer .time_units p {
+.sale_ads_container .sale_ads_trial .offer_text p:first-child {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.sale_ads_container .sale_ads_trial .offer_text p:last-child {
     font-weight: 500;
-    font-size: 17px;
-    line-height: 21px;
-    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.sale_ads_container .sale_ads_trial .offer_timer {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: fit-content;
+    margin: 12px auto 4px;
+}
+
+.sale_ads_container .sale_ads_trial .offer_timer .timer_title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sale_ads_container .sale_ads_trial .offer_timer .timer_title div {
+    width: 24px;
+    height: 2px;
+    background: black;
+}
+
+.sale_ads_container .sale_ads_trial .offer_timer .timer_title p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.sale_ads_container .sale_ads_trial .offer_timer p:nth-child(2) {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: black;
+    margin-top: 3px;
+}
+
+.sale_ads_container .sale_ads_trial .offer_timer p:last-child {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
     color: #ff3333;
 }
 
-.sale_ads_container .select_package_section {
+.sale_ads_container .sale_ads_trial .retail_price {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 8px 0 12px;
-    gap: 20px;
+    gap: 8px;
 }
 
-.sale_ads_container .select_package_section p {
+.sale_ads_container .sale_ads_trial .retail_price p:first-child {
     font-family: 'Inter';
     font-style: normal;
-}
-
-.sale_ads_container .select_package_section p:first-child {
+    font-size: 12px;
     font-weight: 600;
-    font-size: 30px;
-    line-height: 36px;
-    text-align: center;
-    color: black;
+    line-height: 15px;
+    color: #ff3333;
 }
 
-.sale_ads_container .select_package_section .package_group {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 16px 0 1px;
+.sale_ads_container .sale_ads_trial .retail_price p:first-child span {
+    text-decoration: line-through;
 }
 
-.sale_ads_container .select_package_section .package_group .package_item {
-    width: 190px;
-    height: 200px;
-    background: #f9f9f9;
-    border: 2px solid rgba(0, 0, 0, 0.08);
-    border-radius: 10px;
-    padding: 12px 24px 28px;
+.sale_ads_container .sale_ads_trial .retail_price p:last-child {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #00ba34;
+}
+
+.sale_ads_container .select_package_section {
+    margin: 8px auto 12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2586,249 +2582,204 @@ element {
     gap: 12px;
 }
 
-.sale_ads_container .select_package_section .package_group .package_item:active,
-.sale_ads_container .select_package_section .package_group .package_item:focus,
-.sale_ads_container .select_package_section .package_group .package_item:hover {
-    background: white;
-    border: 2px solid #005cff;
+.sale_ads_container .select_package_section button {
+    border-radius: 4px;
+    color: white;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
 }
 
-.sale_ads_container .select_package_section .package_group .package_item .discount_group {
+.sale_ads_container .select_package_section button:first-child {
+    width: 413px;
+    height: 32px;
+    background: #ffad33;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.sale_ads_container .select_package_section .trial_offer_section {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    width: 61px;
+    align-items: center;
+    position: relative;
+    top: -10px;
+}
+
+.sale_ads_container .select_package_section .trial_offer_section button {
+    width: 215px;
     height: 20px;
     background: #00ba34;
-    border-radius: 50px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    position: relative;
+    top: 10px;
 }
 
-.sale_ads_container .select_package_section .package_group .package_item .discount_group p {
-    font-weight: 500;
-    font-size: 11px;
-    line-height: 13px;
-    color: white;
+.sale_ads_container .select_package_section .trial_offer_section .offer_group {
+    background: white;
+    width: 295px;
+    border: 2px solid #005cff;
+    box-shadow: 0px 7px 14px 1px rgba(31, 112, 255, 0.19);
+    border-radius: 10px;
+    padding: 18px 40px;
 }
 
-.sale_ads_container .select_package_section .package_group .package_item p:nth-child(2) {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+.sale_ads_container .select_package_section .trial_offer_section .offer_group p {
+    font-family: 'Inter';
+    font-style: normal;
+    letter-spacing: -0.5px;
     color: rgba(0, 0, 0, 0.8);
-    width: 100%;
+}
+
+.sale_ads_container .select_package_section .trial_offer_section .offer_group p:first-child {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
     text-align: left;
 }
 
-.sale_ads_container .select_package_section .package_group .package_item .item_price_section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 4px 0;
-}
-
-.sale_ads_container .select_package_section .package_group .package_item .item_price_section p:first-child {
+.sale_ads_container .select_package_section .trial_offer_section .offer_group p:nth-child(2) {
     font-weight: 600;
-    font-size: 30px;
-    line-height: 36px;
-    color: black;
-}
-
-.sale_ads_container .select_package_section .package_group .package_item .item_price_section p:last-child {
-    font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    color: rgba(0, 0, 0, 0.5);
-    text-align: center;
+    color: black;
+    margin: 8px auto 4px;
 }
 
-.sale_ads_container .select_package_section .package_group .package_item input[type='radio'] {
-    width: 22px;
-    height: 22px;
+.sale_ads_container .select_package_section .trial_offer_section .offer_group p:nth-child(3) {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 12px;
+}
+
+.sale_ads_container .select_package_section .trial_offer_section .offer_group p:nth-child(3) span {
+    color: #00ba34;
+}
+
+.sale_ads_container .select_package_section .trial_offer_section .offer_group input[type='radio'] {
+    width: 16px;
+    height: 16px;
 }
 
 .sale_ads_container .select_package_section .offer_status {
     display: flex;
     align-items: center;
-    gap: 9px;
+    gap: 10px;
+}
+
+.sale_ads_container .select_package_section .offer_status div {
+    height: 20px;
+    width: 2px;
+    background: #585757;
 }
 
 .sale_ads_container .select_package_section .offer_status p {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 19px;
     color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    gap: 8px;
 }
 
 .sale_ads_container .select_package_section .offer_status p span {
-    font-size: 24px;
-    line-height: 29px;
-    text-decoration-line: line-through;
     color: black;
 }
 
-.sale_ads_container .select_package_section .offer_status div {
-    width: 2px;
-    height: 34px;
-    background: #585757;
+.sale_ads_container .select_package_section .offer_status p:first-child span {
+    text-decoration: line-through;
 }
 
-.sale_ads_container .select_package_section .offer_controller {
+.sale_ads_container .offer_controller {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
 }
 
-.sale_ads_container .select_package_section .offer_controller .offer_button_group {
+.sale_ads_container .offer_controller .offer_button_group {
     display: flex;
     align-items: center;
-    gap: 22px;
+    gap: 16px;
 }
 
-.sale_ads_container .select_package_section .offer_controller .offer_button_group button {
-    width: 292px;
-    height: 70px;
+.sale_ads_container .offer_controller .offer_button_group button {
+    width: 198px;
+    height: 56px;
     background: #fafafa;
     border: 1.5px solid rgba(0, 0, 0, 0.08);
     border-radius: 8px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 20px;
     letter-spacing: -0.5px;
     color: rgba(0, 0, 0, 0.5);
+    padding: 8px 26px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.sale_ads_container .select_package_section .offer_controller .offer_button_group button:active,
-.sale_ads_container .select_package_section .offer_controller .offer_button_group button:focus,
-.sale_ads_container .select_package_section .offer_controller .offer_button_group button:hover {
+.sale_ads_container .offer_controller .offer_button_group button img {
+    width: 20px;
+    height: 20px;
+}
+
+.sale_ads_container .offer_controller .offer_button_group button:active,
+.sale_ads_container .offer_controller .offer_button_group button:focus,
+.sale_ads_container .offer_controller .offer_button_group button:hover {
     background: #005cff;
     border: none;
+    font-weight: 600;
     color: white;
 }
 
-.sale_ads_container .select_package_section .offer_controller p {
+.sale_ads_container .offer_controller p {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    color: #404040;
+    font-size: 18px;
+    line-height: 22px;
+    color: black;
 }
 
-.sale_ads_container .select_package_section .offer_controller p span {
+.sale_ads_container .offer_controller p span {
     color: #ff3333;
 }
 
 @media (max-width: 768px) {
+    .main_content_section {
+        width: unset;
+    }
+
     .sale_ads_section {
-        gap: 24px;
+        width: fit-content;
+        margin: 0 auto;
     }
 
     .sale_ads_section p:first-child {
-        font-size: 34px;
-        line-height: 44px;
+        font-size: 30px;
+        line-height: 36px;
     }
 
-    .top_button_group {
-        gap: 36px;
-        padding-left: 72px;
-    }
-
-    .sale_ads_container {
-        align-items: unset;
+    .sale_ads_section .sale_ads_container {
         justify-content: center;
+        align-items: center;
         flex-direction: column;
         gap: 36px;
-        padding: 60px 44px 40px;
     }
 
-    .sale_ads_container .sale_ads_description_container {
-        flex-direction: unset;
-        gap: 40px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .sale_ads_container .sale_ads_description_container .sale_ads_description .description_item p {
-        font-size: 16px;
-        line-height: 20px;
-    }
-
-    .sale_ads_container .sale_item_container {
-        gap: 24px;
-    }
-
-    .sale_ads_container .sale_item_container p:first-child {
-        font-size: 26px;
-        line-height: 32px;
-    }
-
-    .sale_ads_container .sale_item_container .offer_timer p {
-        font-size: 20px;
-        line-height: 24px;
-    }
-
-    .sale_ads_container .sale_item_container .offer_timer .time_units {
-        gap: 10px;
-    }
-
-    .sale_ads_container .select_package_section {
-        gap: 12px;
-    }
-
-    .sale_ads_container .select_package_section p:first-child {
-        font-size: 26px;
-        line-height: 30px;
-    }
-
-    .sale_ads_container .select_package_section .package_group {
-        padding: 12px 0 1px;
-        gap: 16px;
-    }
-
-    .sale_ads_container .select_package_section .package_group .package_item {
-        padding: 12px 16px;
-    }
-
-    .sale_ads_container .select_package_section .offer_status p {
-        font-size: 16px;
-        line-height: 20px;
-    }
-
-    .sale_ads_container .select_package_section .offer_status p span {
-        font-size: 20px;
-        line-height: 24px;
-    }
-
-    .sale_ads_container .select_package_section .offer_status div {
-        height: 26px;
-    }
-
-    .sale_ads_container .select_package_section .offer_controller {
-        gap: 24px;
-    }
-
-    .sale_ads_container .select_package_section .offer_controller .offer_button_group {
-        gap: 32px;
-    }
-
-    .sale_ads_container .select_package_section .offer_controller .offer_button_group button {
-        width: 240px;
-        height: 64px;
-        font-size: 18px;
-        line-height: 24px;
-    }
-
-    .sale_ads_container .select_package_section .offer_controller p {
-        font-size: 20px;
-        line-height: 24px;
+    .sale_ads_section .sale_ads_container .sale_ads_trial {
+        top: 0;
     }
 }
 
@@ -2879,21 +2830,21 @@ element {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 112px;
+    height: 100px;
     background: #f7f7f7;
     border-radius: 6px;
+    padding: 24px 60px;
 }
 
 .sale_experience_container p {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 24px;
+    line-height: 29px;
     text-align: center;
     letter-spacing: -1px;
     color: rgba(0, 0, 0, 0.6);
-    padding: 20px 180px;
 }
 
 .sale_experience_container p span {
@@ -2901,6 +2852,12 @@ element {
 }
 
 @media (max-width: 768px) {
+    .sale_experience_container {
+        width: unset;
+        padding: 24px 0;
+        margin: 0 64px;
+    }
+
     .sale_experience_container p {
         font-size: 24px;
         line-height: 30px;
@@ -2908,15 +2865,51 @@ element {
     }
 }
 
-.offer_users_feedback_horizontal_bar {
+.sale_description_bar {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    margin: 40px 0 64px;
-    width: 100%;
+    gap: 7px;
+    justify-content: center;
+    margin: 32px 0 40px;
+    padding: 0 16px;
 }
 
-.offer_users_feedback_horizontal_bar .offer_users_feedback_title {
+.sale_description_bar p {
+    font-family: 'Inter';
+    font-style: normal;
+    color: black;
+}
+
+.sale_description_bar p:first-child {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.sale_description_bar p:last-child {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .sale_description_bar {
+        margin: 32px 64px 40px;
+    }
+
+    .sale_description_bar p:first-child {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .sale_description_bar p:last-child {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+.offer_users_feedback_title {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -2926,18 +2919,17 @@ element {
     text-align: left;
 }
 
-.offer_users_feedback_horizontal_bar .offer_users_feedback_group {
+.offer_users_feedback_group {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    margin-bottom: 56px;
+    margin: 32px 0 56px;
 }
 
-.offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item {
+.offer_users_feedback_group .offer_users_feedback_item {
     width: 100%;
     height: 180px;
     background: white;
-    border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     padding: 24px 32px;
     display: flex;
@@ -2945,54 +2937,56 @@ element {
     text-align: left;
 }
 
-.offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item:hover {
+.offer_users_feedback_group .offer_users_feedback_item:hover,
+.offer_users_feedback_group .offer_users_feedback_item:focus,
+.offer_users_feedback_group .offer_users_feedback_item:active {
     background: #f4f4f4;
 }
 
-.offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item p {
+.offer_users_feedback_group .offer_users_feedback_item p {
     font-family: 'Inter';
     font-style: normal;
 }
 
-.offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_content {
+.offer_users_feedback_group .offer_users_feedback_item .feedback_content {
     display: flex;
     gap: 19px;
 }
 
-.offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_avatar {
+.offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_avatar {
     width: 75px;
 }
 
-.offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_avatar img:first-child {
+.offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_avatar img:first-child {
     width: 75px;
     height: 75px;
     border-radius: 50px;
 }
 
-.offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_avatar img:last-child {
+.offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_avatar img:last-child {
     position: relative;
     left: 53px;
     top: -21px;
 }
 
-.offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback {
+.offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback {
     padding-top: 6px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback .name_title {
+.offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback .name_title {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback .name_title .feedback_status_mobile {
+.offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback .name_title .feedback_status_mobile {
     display: none;
 }
 
-.offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback .name_title .feedback_status_mobile p {
+.offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback .name_title .feedback_status_mobile p {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
@@ -3000,14 +2994,14 @@ element {
     color: black;
 }
 
-.offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback .name_title p:first-child {
+.offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback .name_title p:first-child {
     font-weight: 600;
     font-size: 18px;
     line-height: 20px;
     color: black;
 }
 
-.offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback p:last-child {
+.offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback p:last-child {
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
@@ -3015,13 +3009,13 @@ element {
     color: rgba(0, 0, 0, 0.5);
 }
 
-.offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback .rate_section {
+.offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback .rate_section {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback .rate_section p {
+.offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback .rate_section p {
     font-weight: 500;
     font-size: 16px;
     line-height: 0px;
@@ -3029,14 +3023,14 @@ element {
     color: rgba(0, 0, 0, 0.8);
 }
 
-.offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback .rate_section .rate_stars {
+.offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback .rate_section .rate_stars {
     display: flex;
     align-items: center;
     gap: 6px;
     padding: 3px;
 }
 
-.offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_status_pc {
+.offer_users_feedback_group .offer_users_feedback_item .feedback_status_pc {
     height: fit-content;
     padding-top: 18px;
     display: flex;
@@ -3044,7 +3038,7 @@ element {
     gap: 8px;
 }
 
-.offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_status_pc p {
+.offer_users_feedback_group .offer_users_feedback_item .feedback_status_pc p {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
@@ -3057,38 +3051,37 @@ element {
 }
 
 @media (max-width: 768px) {
-    .offer_users_feedback_horizontal_bar .offer_users_feedback_title {
+    .offer_users_feedback_title {
         font-size: 24px;
         line-height: 30px;
     }
 
-    .offer_users_feedback_horizontal_bar .offer_users_feedback_group {
+    .offer_users_feedback_group {
         gap: 16px;
-        margin: 0;
     }
 
-    .offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item {
+    .offer_users_feedback_group .offer_users_feedback_item {
         height: 127px;
         padding: 16px;
         display: block;
         justify-content: unset;
     }
 
-    .offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_content {
+    .offer_users_feedback_group .offer_users_feedback_item .feedback_content {
         justify-content: space-between;
     }
 
-    .offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_avatar {
+    .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_avatar {
         width: 40px;
     }
 
-    .offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_avatar img:first-child {
+    .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_avatar img:first-child {
         width: 40px;
         height: 40px;
         border-radius: 30px;
     }
 
-    .offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_avatar img:last-child {
+    .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_avatar img:last-child {
         width: 8px;
         height: 8px;
         position: relative;
@@ -3096,28 +3089,28 @@ element {
         top: -11px;
     }
 
-    .offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback {
+    .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback {
         width: 100%;
         padding: 0;
     }
 
-    .offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback .name_title p {
+    .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback .name_title p {
         font-size: 14px;
         line-height: 18px;
     }
 
-    .offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback .name_title .feedback_status_mobile {
+    .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback .name_title .feedback_status_mobile {
         display: flex;
         align-items: center;
         gap: 4px;
     }
 
-    .offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback .name_title .feedback_status_mobile img {
+    .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback .name_title .feedback_status_mobile img {
         width: 12px;
         height: 12px;
     }
 
-    .offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback .name_title .feedback_status_mobile p {
+    .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback .name_title .feedback_status_mobile p {
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
@@ -3126,23 +3119,72 @@ element {
         color: black;
     }
 
-    .offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback p:last-child {
+    .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback p:last-child {
         font-size: 13px;
         line-height: 16px;
     }
 
-    .offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback .rate_section p {
+    .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback .rate_section p {
         font-size: 10px;
     }
 
-    .offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback .rate_section .rate_stars {
+    .offer_users_feedback_group .offer_users_feedback_item .feedback_content .user_feedback .rate_section .rate_stars {
         gap: 0;
         padding: 0;
     }
 
-    .offer_users_feedback_horizontal_bar .offer_users_feedback_group .offer_users_feedback_item .feedback_status_pc {
+    .offer_users_feedback_group .offer_users_feedback_item .feedback_status_pc {
         display: none;
     }
+}
+
+.upgrade_offer_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.upgrade_offer_section p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.upgrade_offer_section p span {
+    color: #ff3333;
+}
+
+.upgrade_offer_section button {
+    width: 441px;
+    height: 70px;
+    background: #fafafa;
+    border: 1.5px solid rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.upgrade_offer_section button:active,
+.upgrade_offer_section button:focus,
+.upgrade_offer_section button:hover {
+    border: none;
+    font-weight: 600;
+    background: #005cff;
+    color: white;
+}
+
+.upgrade_offer_section img {
+    width: 182px;
 }
 
 .logo_bar {

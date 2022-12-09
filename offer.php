@@ -26,9 +26,6 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body data-theme="dark-v2,light" class="dark-v2" data-new-gr-c-s-check-loaded="14.1073.0" data-gr-ext-installed="">
-        <div class='offer_top_bar'>
-            <img src='images/betternet-logo.png' alt='' />
-        </div>
         <section class="body-wrapper">
             <div class="offer_red_bar">
                 <span>ATTENTION: Do Not leave this page its a secure connection</span>
@@ -42,92 +39,61 @@
                     <button>Bonus #3</button>
                     <button>Completed</button>
                 </div>
-                <div class='sale_ads_section'>
-                    <p>Wait Don’t Forget About Your Friends<br/>& Family... Or Grab More For Yourself</p>
-                    <div>
-                        <div class='top_button_group'>
-                            <button>Save 45%</button>
-                            <button>Best Value</button>
-                        </div>
-                        <div class='sale_ads_container'>
-                            <div class='sale_ads_description_container'>
-                                <img src='images/phone.png' alt='images' />
-                                <div class='sale_ads_description'>
-                                    <div class='description_item'>
-                                        <img src='images/green_checked.png' alt='' />
-                                        <p>Ultrafast connection speed</p>
-                                    </div>
-                                    <div class='description_item'>
-                                        <img src='images/green_checked.png' alt='' />
-                                        <p>10 Premium virtual location</p>
-                                    </div>
-                                    <div class='description_item'>
-                                        <img src='images/green_checked.png' alt='' />
-                                        <p>Ad-free experience</p>
-                                    </div>
-                                    <div class='description_item'>
-                                        <img src='images/green_checked.png' alt='' />
-                                        <p>Connect up to 10 devices</p>
-                                    </div>
-                                </div>
+                <div class='main_content_section'>
+                    <div class='sale_ads_section'>
+                        <p>Wait Don’t Forget About Your Friends<br/>& Family... Or Grab More For Yourself</p>
+                        <div>
+                            <div class='top_button_group'>
+                                <button>Save 45%</button>
+                                <button>Best Value</button>
                             </div>
-                            <div class='sale_item_container'>
-                                <p> We want you to take full advantages of<br/>this <span>offer</span> to protect your security.</p>
-                                <div class='offer_timer'>
-                                    <p>The offer ends in</p>
-                                    <p id='offer_clock'>00 : 00 : 00</p>
-                                    <div class='time_units'>
-                                        <p>HRS</p>
-                                        <p>MIN</p>
-                                        <p>SECS</p>
+                            <div class='sale_ads_container'>
+                                <img src='images/phone.png' alt='images' />
+                                <div class='sale_ads_trial'>
+                                    <div class='offer_text'>
+                                        <p>We want you to take<br/>full advantages of this offer</p>
+                                        <p>Here’s your <span>LAST CHANCE</span><br/>To Secure your devices get <span>TRIAL VERSION</span></p>
                                     </div>
-                                </div>
-                                <div class='select_package_section'>
-                                    <p>Select Your Package</p>
-                                    <div class='package_group' id='package_group'>
-                                        <div class='package_item'>
-                                            <div class='discount_group'>
-                                                <p>45% off</p>
-                                            </div>
-                                            <p>12 months</p>
-                                            <div class='item_price_section'>
-                                                <p>$12.99</p>
-                                                <p>/ month</p>
-                                            </div>
-                                            <input type='radio' id='price_12' name='package_group' />
+                                    <div class='offer_timer'>
+                                        <div class='timer_title'>
+                                            <div></div>
+                                            <p>The offer ends in</p>
+                                            <div></div>
                                         </div>
-                                        <div class='package_item'>
-                                            <div class='discount_group'>
-                                                <p>30% off</p>
-                                            </div>
-                                            <p>6 months</p>
-                                            <div class='item_price_section'>
-                                                <p>$3.99</p>
-                                                <p>/ month</p>
-                                            </div>
-                                            <input type='radio' id='price_6' name='package_group' />
-                                        </div>
-                                        <div class='package_item'>
-                                            <div class='discount_group'>
-                                                <p>21% off</p>
-                                            </div>
-                                            <p>1 months</p>
-                                            <div class='item_price_section'>
-                                                <p>$2.99</p>
-                                                <p>/ month</p>
-                                            </div>
-                                            <input type='radio' id='price_1' name='package_group' />
-                                        </div>
+                                        <p id='offer_clock'>00 : 00 : 00</p>
+                                        <p>HRS MIN SEC</p>
                                     </div>
-                                    <div class='offer_status'>
-                                        <p>Regular Price:<span>$16</span></p>
-                                        <div></div>
-                                        <p>Your Total:<span>Free Trial</span></p>
+                                    <div class='retail_price'>
+                                        <p>Retail price is <span>$28</span></p>
+                                        <p>$12.99</p>
+                                    </div>
+                                    <div class='select_package_section'>
+                                        <button>Select Your Package</button>
+                                        <div class='trial_offer_section'>
+                                            <button>Limited Time Offer</button>
+                                            <div class='offer_group'>
+                                                <p>7 days only</p>
+                                                <p>Free Trial</p>
+                                                <p><span>20%</span> Save</p>
+                                                <input type='radio' id='free_trial'/>
+                                            </div>
+                                        </div>
+                                        <div class='offer_status'>
+                                            <p>Regular Price: <span>$16</span></p>
+                                            <div></div>
+                                            <p>Your Total: <span>Free Trial</span></p>
+                                        </div>
                                     </div>
                                     <div class='offer_controller'>
                                         <div class='offer_button_group'>
-                                            <button>Skip, Show me next offer</button>
-                                            <button>Yes, upgrade my offer</button>
+                                            <button>
+                                                Skip, Show me next offer
+                                                <img src='images/cancel.png' />
+                                            </button>
+                                            <button>
+                                                Yes, upgrade my offer
+                                                <img src='images/white_checked.png' />
+                                            </button>
                                         </div>
                                         <p>HURRY! SALE ENDS IN <span id='offer_end_timer'>00:00</span></p>
                                     </div>
@@ -135,37 +101,39 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class='credit_alert_section'>
-                    <div class='credit_alert_item'>
-                        <div class='icon_container'>
-                            <img src='images/thumb_up.png' />
+                    <div class='credit_alert_section'>
+                        <div class='credit_alert_item'>
+                            <div class='icon_container'>
+                                <img src='images/thumb_up.png' />
+                            </div>
+                            <div class='credit_alert_text'>
+                                <p>100%<br/>Satisfaction</p>
+                            </div>
                         </div>
-                        <div class='credit_alert_text'>
-                            <p>100%<br/>Satisfaction</p>
+                        <div class='credit_alert_item'>
+                            <div class='icon_container'>
+                                <img src='images/assignment_return.png' />
+                            </div>
+                            <div class='credit_alert_text'>
+                                <p>Free<br/>Returns</p>
+                            </div>
+                        </div>
+                        <div class='credit_alert_item'>
+                            <div class='icon_container'>
+                                <img src='images/payments.png' />
+                            </div>
+                            <div class='credit_alert_text'>
+                                <p>Safe<br/>Payments</p>
+                            </div>
                         </div>
                     </div>
-                    <div class='credit_alert_item'>
-                        <div class='icon_container'>
-                            <img src='images/assignment_return.png' />
-                        </div>
-                        <div class='credit_alert_text'>
-                            <p>Free<br/>Returns</p>
-                        </div>
+                    <div class='sale_experience_container'>
+                        <p><span>99%</span> of our happy customers took this offer to ensure a convenient self-care.</p>
                     </div>
-                    <div class='credit_alert_item'>
-                        <div class='icon_container'>
-                            <img src='images/payments.png' />
-                        </div>
-                        <div class='credit_alert_text'>
-                            <p>Safe<br/>Payments</p>
-                        </div>
+                    <div class='sale_description_bar'>
+                        <p>What is betternet VPN Service?</p>
+                        <p>Betternet is a VPN Service which provides secure internet connection from which your privacy don’t leak on the internet. Its the best in the market with free trial verison for 14 days to get enjoy the premium feautres of the Betternet VPN.</p>
                     </div>
-                </div>
-                <div class='sale_experience_container'>
-                    <p><span>99%</span> of our happy customers took this offer to ensure a convenient self-care.</p>
-                </div>
-                <div class='offer_users_feedback_horizontal_bar'>
                     <p class='offer_users_feedback_title'>What customers say about us</p>
                     <div class='offer_users_feedback_group'>
                         <div class='offer_users_feedback_item'>
@@ -265,8 +233,14 @@
                             </div>
                         </div>
                     </div>
+                    <div class='horizontal_center_bar'>
+                        <div class='upgrade_offer_section'>
+                            <p>HURRY! SALE ENDS IN <span id='offer_end_timer1'>4:59</span></p>
+                            <button>Yes, upgrade my offer</button>
+                            <img src='images/trust-badges.png' />
+                        </div>
+                    </div>
                 </div>
-                <img id='#trust_badge' src='images/trust-badges.png' alt='' />
             </div>
             <script src="js/survey-site.js?v=18" async></script>
         </section>
@@ -335,7 +309,7 @@
                 document.getElementById('offer_end_timer1').innerHTML = mn + ':' + sc;
                 document.getElementById('offer_clock').innerHTML = hr + ' : ' + mn + ' : ' + sc;
             }, spd);
-            document.getElementById('price_12').checked = true;
+            document.getElementById('free_trial').checked = true;
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </body>
